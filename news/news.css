@@ -1,0 +1,35 @@
+a.clearlink {
+    text-decoration: none;
+    color: unset;
+}
+.card {
+    background-color: #1D2024;
+    display: flex;
+    border-radius: 5px;
+}
+.card:hover {
+    background-color: #505863;
+}
+.card > .body {
+    margin: 1rem;
+    flex: 2 2;
+}
+.card > .body > .title {
+    padding: 0;
+}
+.card > .body > .tag {
+    font-size: small;
+    color: rgb(194, 140, 39);
+}
+.card > .body > .date {
+    font-size: small;
+    color: gray;
+}
+.card > .media {
+    margin: 1rem;
+    flex: 1 1;
+}
+.card > .media > img {
+    width: unset;
+    max-height: 200px;
+}
