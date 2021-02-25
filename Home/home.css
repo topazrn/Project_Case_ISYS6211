@@ -2,13 +2,18 @@ section {
     background-color: #1B2838;
     padding-bottom: 2rem;
 }
-.coming-soon {
+.grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-.free-to-play {
+.grid-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0.5rem;
+}
+.description {
+    font-size: xx-large;
+    background-color: #1D2024;
+    padding: 0 2rem;
 }
