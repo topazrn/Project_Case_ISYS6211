@@ -1,0 +1,13 @@
+.category {
+    display: flex;
+    overflow-x: scroll;
+}
+.category figure {
+    margin-left: 1rem;
+}
+.category figure:first-child {
+    margin-left: 0;
+}
+.category figure img {
+    width: 300px;
+}
