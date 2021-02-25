@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    background-image: radial-gradient(#2D4158, #2A2E33);
+}
+.navbar > ul {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+}
+.navbar > ul > li {
+    display: inline;
+    padding: 0 1rem;
+    color: #C5CBD6;
+    text-transform: uppercase;
+}
