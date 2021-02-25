@@ -1,6 +1,8 @@
 .description {
-    font-size: xx-large;
     background-color: #1D2024;
     padding: 0 2rem;
     border-radius: 5px;
+}
+.description p span {
+    font-size: x-large;
 }
