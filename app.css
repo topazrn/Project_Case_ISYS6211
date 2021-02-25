@@ -2,18 +2,37 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e6e7e9;
 }
-.navbar {
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 1rem 0;
+}
+nav {
     background-image: radial-gradient(#2D4158, #2A2E33);
 }
-.navbar > ul {
+nav ul {
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 0;
     list-style: none;
 }
-.navbar > ul > li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     padding: 0 1rem;
     color: #C5CBD6;
     text-transform: uppercase;
+}
+nav ul li:first-child {
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 960px;
+}
+figure {
+    margin: 0;
+}
+figure img {
+    width: 100%;
 }
