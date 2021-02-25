@@ -24,7 +24,15 @@ nav ul li {
     text-transform: uppercase;
 }
 nav ul li:first-child {
-    padding: 0;
+    padding-left: 0;
+}
+nav ul li:hover {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+nav ul li.active {
+    color: white;
+    text-shadow: 0 0 5px white;
 }
 .container {
     margin: 0 auto;
