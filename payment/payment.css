@@ -1,0 +1,40 @@
+html, body {
+    background-image: url("../images/payment.jpg");
+}
+form {
+    width: 400px;
+}
+form label {
+    color: rgb(206, 206, 206);
+}
+form select, form input {
+    background-color: #32353C;
+    color: white;
+    padding: 8px 6px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+form input:not([type=radio]) {
+    width: 100%;
+}
+form select {
+    width: 412px;
+}
+form select option:first-child {
+    color: gray;
+}
+.payment {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+    width: 400px;
+}
+form button[type=submit] {
+    padding: 8px 50px;
+    color: #c3e1f8;
+    background-image: linear-gradient(90deg, #3DA3F1, #245FCF);
+    border: none;
+    border-radius: 3px;
+}

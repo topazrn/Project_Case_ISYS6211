@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,71 @@
     <meta name="description" content="STim is an online game store that provides third party games from different publishers.">
     <title>Library</title>
     <link rel="stylesheet" href="../app.css">
-    <link rel="stylesheet" href="./library.css">
+    <link rel="stylesheet" href="./payment.css">
 </head>
+
 <body>
     <nav>
         <div class="container">
             <ul>
-                <a href="../home"><li>Home</li></a>
-                <a href="../library"><li>Library</li></a>
-                <a href="../news"><li>News</li></a>
-                <a href="../about"><li>About Us</li></a>
-                <a href="../payment"><li class="active">Payment</li></a>
+                <a href="../home">
+                    <li>Home</li>
+                </a>
+                <a href="../library">
+                    <li>Library</li>
+                </a>
+                <a href="../news">
+                    <li>News</li>
+                </a>
+                <a href="../about">
+                    <li>About Us</li>
+                </a>
+                <a href="../payment">
+                    <li class="active">Payment</li>
+                </a>
             </ul>
         </div>
     </nav>
-    <main>
-        <div class="container">
-
-        </div>
+    <main class="container">
+        <h1>Payment</h1>
+        <form action="../404.html" method="post" onsubmit="submits(event)">
+            <label for="country">Country</label><br>
+            <select name="country">
+                <option value="">Please Select</option>
+                <option value="af">Afghanistan</option>
+                <option value="ca">Canada</option>
+                <option value="id">Indonesia</option>
+                <option value="uk">United Kingdom</option>
+                <option value="us">United States of America</option>
+            </select><br>
+            <label for="fullname">Full Name</label><br>
+            <input type="text" name="fullname"><br>
+            <label for="username">Username</label><br>
+            <input type="text" maxlength="10" name="username"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <label for="payment_method">Payment Method</label><br>
+            <input type="radio" name="payment_method" value="debit" checked>
+            <label for="debit">Debit</label>
+            <input type="radio" name="payment_method" value="credit">
+            <label for="credit">Credit</label>
+            <br>
+            <div class="payment">
+                <div>
+                    <label for="card_number">Debit/Credit Number</label><br>
+                    <input type="text" maxlength="16" name="card_number"><br>
+                </div>
+                <div>
+                    <label for="exp">Exp</label><br>
+                    <input type="text" name="exp"><br>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </main>
+    <script src="./payment.js"></script>
 </body>
+
 </html>
