@@ -2,12 +2,12 @@
     display: flex;
     overflow-x: scroll;
 }
-.category figure {
+.category .card {
     margin-left: 1rem;
 }
-.category figure:first-child {
+.category .card:first-child {
     margin-left: 0;
 }
-.category figure img {
+.category .card img {
     width: 300px;
 }
