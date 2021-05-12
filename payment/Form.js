@@ -29,7 +29,7 @@ class Form {
         }
         for (let index = 0; index < this.fullname.length; index++) {
             const character = this.fullname[index];
-            if (!(character === " " || letters[character] !== undefined)) {
+            if (!isLetter(character)) {
                 alert("Full Name must be letter only.");
                 return false;
             }
@@ -67,7 +67,7 @@ class Form {
         let hasUppercase = false;
         for (let index = 0; index < this.password.length; index++) {
             const character = this.password[index];
-            if (uppercase[character] !== undefined) {
+            if (isUpperCase(character)) {
                 hasUppercase = true;
                 break;
             }
@@ -79,7 +79,7 @@ class Form {
         let hasNumber = false;
         for (let index = 0; index < this.password.length; index++) {
             const character = this.password[index];
-            if (numbers[character] !== undefined) {
+            if (isNumber(character)) {
                 hasNumber = true;
                 break;
             }
@@ -96,7 +96,7 @@ class Form {
         }
         for (let index = 0; index < this.card_number.length; index++) {
             const character = this.card_number[index];
-            if (numbers[character] === undefined) {
+            if (!isNumber(character)) {
                 alert("Debit/Credit Number must be number only.");
                 return false;
             }
@@ -116,11 +116,11 @@ class Form {
             alert("Exp must match with mm/yy format. fd");
             return false;
         } else {
-            let c1 = numbers[this.exp[0]] !== undefined;
-            let c2 = numbers[this.exp[1]] !== undefined;
+            let c1 = isNumber(this.exp[0]);
+            let c2 = isNumber(this.exp[1]);
             let c3 = this.exp[2] === "/";
-            let c4 = numbers[this.exp[3]] !== undefined;
-            let c5 = numbers[this.exp[4]] !== undefined;
+            let c4 = isNumber(this.exp[3]);
+            let c5 = isNumber(this.exp[4]);
 
             if (!(c1 && c2 && c3 && c4 && c5)) {
                 alert("Exp must match with mm/yy format. as");

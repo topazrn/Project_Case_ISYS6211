@@ -1,12 +1,31 @@
-lowercase = {
-    a: "a", b: "b", c: "c", d: "d", e: "e", f: "f", g: "g", h: "h", i: "i", j: "j", k: "k", l: "l", m: "m", n: "n", o: "o", p: "p", q: "q", r: "r", s: "s", t: "t", u: "u", v: "v", w: "w", x: "x", y: "y", z: "z", 
-};
-uppercase = {
-    A: "A", B: "B", C: "C", D: "D", E: "E", F: "F", G: "G", H: "H", I: "I", J: "J", K: "K", L: "L", M: "M", N: "N", O: "O", P: "P", Q: "Q", R: "R", S: "S", T: "T", U: "U", V: "V", W: "W", X: "X", Y: "Y", Z: "Z",
-};
-letters = {
-    ...lowercase, ...uppercase,
-};
-numbers = {
-    0: "0", 1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6", 7: "7", 8: "8", 9: "9",
-};
+const ASCII_a = "a".charCodeAt(0);
+const ASCII_z = "z".charCodeAt(0);
+const ASCII_A = "A".charCodeAt(0);
+const ASCII_Z = "Z".charCodeAt(0);
+const ASCII_0 = "0".charCodeAt(0);
+const ASCII_9 = "9".charCodeAt(0);
+
+function isLowerCase(character = "") {
+    if (character.charCodeAt(0) >= ASCII_a && character.charCodeAt(0) <= ASCII_z) {
+        return true;
+    }
+    return false;
+}
+
+function isUpperCase(character = "") {
+    if (character.charCodeAt(0) >= ASCII_A && character.charCodeAt(0) <= ASCII_Z) {
+        return true;
+    }
+    return false;
+}
+
+function isLetter(character = "") {
+    return isLowerCase(character) || isUpperCase(character);
+}
+
+function isNumber(character = "") {
+    if (character.charCodeAt(0) >= ASCII_0 && character.charCodeAt(0) <= ASCII_9) {
+        return true;
+    }
+    return false;
+}
