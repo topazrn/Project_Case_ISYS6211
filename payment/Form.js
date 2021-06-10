@@ -113,7 +113,7 @@ class Form {
         }
         if (this.exp.length !== 5) {
             console.log(this.exp.length);
-            alert("Exp must match with mm/yy format. fd");
+            alert("Exp must match with mm/yy format.");
             return false;
         } else {
             let c1 = isNumber(this.exp[0]);
@@ -123,7 +123,7 @@ class Form {
             let c5 = isNumber(this.exp[4]);
 
             if (!(c1 && c2 && c3 && c4 && c5)) {
-                alert("Exp must match with mm/yy format. as");
+                alert("Exp must match with mm/yy format.");
                 return false;
             }
         }
