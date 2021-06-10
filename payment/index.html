@@ -46,27 +46,27 @@
                 <option value="us">United States of America</option>
             </select><br>
             <label for="fullname">Full Name</label><br>
-            <input type="text" name="fullname"><br>
+            <input required type="text" name="fullname"><br>
             <label for="username">Username</label><br>
-            <input type="text" maxlength="10" name="username"><br>
+            <input required type="text" maxlength="10" name="username"><br>
             <label for="email">Email</label><br>
-            <input type="email" name="email"><br>
+            <input required type="email" name="email"><br>
             <label for="password">Password</label><br>
-            <input type="password" name="password"><br>
+            <input required type="password" name="password"><br>
             <label for="payment_method">Payment Method</label><br>
-            <input type="radio" name="payment_method" value="debit" checked>
+            <input required type="radio" name="payment_method" value="debit" checked>
             <label for="debit">Debit</label>
-            <input type="radio" name="payment_method" value="credit">
+            <input required type="radio" name="payment_method" value="credit">
             <label for="credit">Credit</label>
             <br>
             <div class="payment">
                 <div>
                     <label for="card_number">Debit/Credit Number</label><br>
-                    <input type="text" maxlength="16" name="card_number"><br>
+                    <input required type="text" maxlength="16" name="card_number"><br>
                 </div>
                 <div>
                     <label for="exp">Exp</label><br>
-                    <input type="text" maxlength="5" name="exp"><br>
+                    <input required type="text" maxlength="5" name="exp"><br>
                 </div>
             </div>
             <button type="submit">Submit</button>
