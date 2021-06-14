@@ -4,6 +4,7 @@ const ASCII_A = "A".charCodeAt(0);
 const ASCII_Z = "Z".charCodeAt(0);
 const ASCII_0 = "0".charCodeAt(0);
 const ASCII_9 = "9".charCodeAt(0);
+const ASCII_space = " ".charCodeAt(0);
 
 function isLowerCase(character = "") {
     if (character.charCodeAt(0) >= ASCII_a && character.charCodeAt(0) <= ASCII_z) {
@@ -20,7 +21,7 @@ function isUpperCase(character = "") {
 }
 
 function isLetter(character = "") {
-    return isLowerCase(character) || isUpperCase(character);
+    return isLowerCase(character) || isUpperCase(character) || character.charCodeAt(0) == ASCII_space;
 }
 
 function isNumber(character = "") {
